@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url(../fonts/stylesheet.css);
+/*General*/
+table.biz-table, .cabecera, .banner {
+	clear: none;
+	width: 79%;
+	max-width: 586px;
+}
+.imagen {
+	border-left: 4px solid #07628c;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	display: block;
+}
+.imagen:hover, .estrellas .star-rating .star:hover, div.informacion a:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+.estrellas div {
+	display: inline!important;
+}
+.estrellas .star-rating .star {
+	font-size: 18px;
+}
+.htitle{
+  text-align: center;
+  font-family: unset;
+}
+
+.wrap{
+	margin: 4% auto;
+}
+.formstyle{
+
+}
+.temp_p{
+	text-align: center;
+}
+.main-form{
+ margin: 0 auto;
+ display: inline-block;
+ padding-left: 18%;
+
+}
+
+.woocommerce-help-tip{
+	color: #59c362 !important;
+}
+.txt_size{
+	width: 100% !important;
+}
+text{
+	width: 100% !important;
+}
+table.form-table+input+input+p.submit, table.form-table+input+p.submit, table.form-table+p.submit{
+	text-align: center !important;
+}
+#lengthp{
+margin: 0 auto;
+text-align: center;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+#setting_heading{
+margin: 0 auto;
+text-align: center;
+width: 98%;
+}
+}
