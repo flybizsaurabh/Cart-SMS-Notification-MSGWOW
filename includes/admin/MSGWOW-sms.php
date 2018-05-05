@@ -1,6 +1,6 @@
 <?php
 //Getway service Assign function
-function biz_sms_geteways( $servicio ) {
+function MSGWOW_sms_geteways( $servicio ) {
 	$prefijo = array( 
 		"msg91", 
 		"msgwow", 
@@ -10,8 +10,8 @@ function biz_sms_geteways( $servicio ) {
 }
 
 //Make Array For charactors code
-function biz_sms_ct_code( $mensaje ) {
-	$biz_ct = array( 
+function MSGWOW_sms_ct_code( $mensaje ) {
+	$MSGWOW_ct = array( 
 		'Š'			=> 'S', 
 		'š'			=> 's', 
 		'Đ'			=> 'Dj', 
@@ -104,38 +104,38 @@ function biz_sms_ct_code( $mensaje ) {
 		"¿"			=> "" 
 	);
 
-	$mensaje = str_replace( array_keys( $biz_ct ), array_values( $biz_ct ), $mensaje );
+	$mensaje = str_replace( array_keys( $MSGWOW_ct ), array_values( $MSGWOW_ct ), $mensaje );
 
 	return $mensaje;
 }
 
 //For SMS Formate
-function biz_sms_message( $mensaje ) {
+function MSGWOW_sms_message( $mensaje ) {
 	return urlencode( html_entity_decode( $mensaje, ENT_QUOTES, "UTF-8" ) );
 }
 
 //Parameter for control
-function biz_sms_tel_process( $pedido, $telefono, $servicio, $propietario = false, $envio = false ) {
+function MSGWOW_sms_tel_process( $pedido, $telefono, $servicio, $propietario = false, $envio = false ) {
 	if ( empty( $telefono ) ) { //Control
 		return;
 	}
 	
-	if ( apply_filters( 'biz_sms_phone_process', true, $pedido, $telefono, $servicio, $propietario, $envio ) ) {
+	if ( apply_filters( 'MSGWOW_sms_phone_process', true, $pedido, $telefono, $servicio, $propietario, $envio ) ) {
 		$billing_country	= is_callable( array( $pedido, 'get_billing_country' ) ) ? $pedido->get_billing_country() : $pedido->billing_country;
 		$shipping_country	= is_callable( array( $pedido, 'get_shipping_country' ) ) ? $pedido->get_shipping_country() : $pedido->shipping_country;
-		$prefijo			= biz_sms_geteways( $servicio );
+		$prefijo			= MSGWOW_sms_geteways( $servicio );
 		$telefono			= str_replace( array( '+', '-' ), '', filter_var( $telefono, FILTER_SANITIZE_NUMBER_INT ) );
 		if ( substr( $telefono, 0, 2 ) == '00' ) { 
 			$telefono = substr( $telefono, 2 );
 		}
 		if ( !$propietario ) {
 			if ( ( !$envio && $billing_country && ( WC()->countries->get_base_country() != $billing_country ) || $prefijo ) ) {
-				$prefijo_internacional = biz_sms_dname( $billing_country ); 
+				$prefijo_internacional = MSGWOW_sms_dname( $billing_country ); 
 			} else if ( ( $envio && $shipping_country && ( WC()->countries->get_base_country() != $shipping_country ) || $prefijo ) ) {
-				$prefijo_internacional = biz_sms_dname( $shipping_country ); 
+				$prefijo_internacional = MSGWOW_sms_dname( $shipping_country ); 
 			}
 		} else if ( $propietario && $prefijo ) {
-			$prefijo_internacional = biz_sms_dname( WC()->countries->get_base_country() );
+			$prefijo_internacional = MSGWOW_sms_dname( WC()->countries->get_base_country() );
 		}
 
 		preg_match( "/(\d{1,4})[0-9.\- ]+/", $telefono, $prefijo_telefonico );
@@ -155,14 +155,14 @@ function biz_sms_tel_process( $pedido, $telefono, $servicio, $propietario = fals
 	}
 	
 	
-	return apply_filters( 'biz_sms_phone_return', $telefono, $pedido, $telefono, $servicio, $propietario, $envio );
+	return apply_filters( 'MSGWOW_sms_phone_return', $telefono, $pedido, $telefono, $servicio, $propietario, $envio );
 }
 
 //SMS Varials
-function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
-	global $biz_sms_settings;
+function MSGWOW_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
+	global $MSGWOW_sms_settings;
 
-	$biz_sms = array( 
+	$MSGWOW_sms = array( 
 		"id", 
 		"status", 
 		"prices_include_tax", 
@@ -179,7 +179,7 @@ function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
 		"order_product",
 		"shipping_method", 
 	);
-	$biz_sms_variables = array( //diff keys variables 
+	$MSGWOW_sms_variables = array( //diff keys variables 
 		"order_key", 
 		"billing_first_name", 
 		"billing_last_name", 
@@ -224,7 +224,7 @@ function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
 	foreach ( $busqueda[1] as $variable ) { 
 		$variable = strtolower( $variable );
 
-		if ( !in_array( $variable, $biz_sms ) && !in_array( $variable, $biz_sms_variables ) && !in_array( $variable, $variables_personalizadas ) ) {
+		if ( !in_array( $variable, $MSGWOW_sms ) && !in_array( $variable, $MSGWOW_sms_variables ) && !in_array( $variable, $variables_personalizadas ) ) {
 			continue;
 		}
 
@@ -240,9 +240,9 @@ function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
 		);
 		
 		if ( !in_array( $variable, $especiales ) ) {
-			if ( in_array( $variable, $biz_sms ) ) {
+			if ( in_array( $variable, $MSGWOW_sms ) ) {
 				$mensaje = str_replace( "%" . $variable . "%", is_callable( array( $pedido, 'get_' . $variable ) ) ? $pedido->{'get_' . $variable}() : $pedido->$variable, $mensaje ); 
-			} else if ( in_array( $variable, $biz_sms_variables ) ) {
+			} else if ( in_array( $variable, $MSGWOW_sms_variables ) ) {
 				$mensaje = str_replace( "%" . $variable . "%", $variables_de_pedido["_" . $variable][0], $mensaje ); 
 			} else if ( isset( $variables_de_pedido[$variable] ) || in_array( $variable, $variables_personalizadas ) ) {
 				$mensaje = str_replace( "%" . $variable . "%", $variables_de_pedido[$variable][0], $mensaje ); 
@@ -262,7 +262,7 @@ function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
 		} else if ( $variable == "order_product" ) {
 			$nombre		= '';
 			$productos	= $pedido->get_items();
-			if ( !isset( $biz_sms_settings['productos'] ) || $biz_sms_settings['productos'] != 1 ) {
+			if ( !isset( $MSGWOW_sms_settings['productos'] ) || $MSGWOW_sms_settings['productos'] != 1 ) {
 				$nombre = $productos[key( $productos )]['name'];
 				if ( strlen( $nombre ) > 10 ) {
 					$nombre = substr( $nombre, 0, 10 ) . "...";
@@ -280,10 +280,10 @@ function biz_sms_vrl( $mensaje, $pedido, $variables, $nota = '' ) {
 	}
 	
 	
-	return apply_filters( 'biz_sms_message' , $mensaje , $numero_de_pedido );
+	return apply_filters( 'MSGWOW_sms_message' , $mensaje , $numero_de_pedido );
 }
 
-function biz_sms_dname( $pais = '' ) {
+function MSGWOW_sms_dname( $pais = '' ) {
 	$paises = array( 
 		'AC' => '247', 
 		'AD' => '376', 

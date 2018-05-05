@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce - Biz SMS Notifications\n"
+"Project-Id-Version: WooCommerce - MSGWOW SMS Notifications\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-26 09:21+0000\n"
 "POT-Revision-Date: Wed Aug 10 2016 13:38:05 GMT+0200 (CEST)\n"
@@ -21,25 +21,25 @@ msgstr ""
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Generator: Loco - https://localise.biz/"
+"X-Generator: Loco - https://localise.MSGWOW/"
 
-#: biz-sms.php:74
-msgid "Biz SMS Notifications"
+#: MSGWOW-sms.php:74
+msgid "MSGWOW SMS Notifications"
 msgstr ""
 
-#: biz-sms.php:74
+#: MSGWOW-sms.php:74
 msgid "SMS Notifications"
 msgstr ""
 
-#: biz-sms.php:130 biz-sms.php:188 includes/biz-template.php:471
+#: MSGWOW-sms.php:130 MSGWOW-sms.php:188 includes/MSGWOW-template.php:471
 msgid "Processing"
 msgstr ""
 
-#: biz-sms.php:131 biz-sms.php:199 includes/biz-template.php:478
+#: MSGWOW-sms.php:131 MSGWOW-sms.php:199 includes/MSGWOW-template.php:478
 msgid "Completed"
 msgstr ""
 
-#: biz-sms.php:269
+#: MSGWOW-sms.php:269
 msgid "This plugin require WooCommerce active to run!"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "If you enjoyed and find helpful this plugin, please make a donation:"
 msgstr ""
 
-#: includes/cuadro-informacion.php:7 includes/admin/functions-biz.php:27
+#: includes/cuadro-informacion.php:7 includes/admin/functions-MSGWOW.php:27
 msgid "Make a donation by "
 msgstr ""
 
@@ -57,8 +57,8 @@ msgstr ""
 
 #: includes/cuadro-informacion.php:19 includes/cuadro-informacion.php:19
 #: includes/cuadro-informacion.php:19 includes/cuadro-informacion.php:19
-#: includes/admin/functions-biz.php:29 includes/admin/functions-biz.php:29
-#: includes/admin/functions-biz.php:29 includes/admin/functions-biz.php:29
+#: includes/admin/functions-MSGWOW.php:29 includes/admin/functions-MSGWOW.php:29
+#: includes/admin/functions-MSGWOW.php:29 includes/admin/functions-MSGWOW.php:29
 msgid "Follow us on "
 msgstr ""
 
@@ -66,7 +66,7 @@ msgstr ""
 msgid "More plugins:"
 msgstr ""
 
-#: includes/cuadro-informacion.php:25 includes/admin/functions-biz.php:30
+#: includes/cuadro-informacion.php:25 includes/admin/functions-MSGWOW.php:30
 msgid "More plugins on "
 msgstr ""
 
@@ -75,7 +75,7 @@ msgid "Contact with us:"
 msgstr ""
 
 #: includes/cuadro-informacion.php:33 includes/cuadro-informacion.php:33
-#: includes/admin/functions-biz.php:31 includes/admin/functions-biz.php:31
+#: includes/admin/functions-MSGWOW.php:31 includes/admin/functions-MSGWOW.php:31
 msgid "Contact with us by "
 msgstr ""
 
@@ -83,20 +83,20 @@ msgstr ""
 msgid "Documentation and Support:"
 msgstr ""
 
-#: includes/cuadro-informacion.php:39 includes/admin/functions-biz.php:45
+#: includes/cuadro-informacion.php:39 includes/admin/functions-MSGWOW.php:45
 msgid "Support"
 msgstr ""
 
-#: includes/cuadro-informacion.php:44 includes/admin/functions-biz.php:91
+#: includes/cuadro-informacion.php:44 includes/admin/functions-MSGWOW.php:91
 #, php-format
 msgid "Please, rate %s:"
 msgstr ""
 
-#: includes/biz-template.php:5
-msgid "Biz SMS Notifications Options."
+#: includes/MSGWOW-template.php:5
+msgid "MSGWOW SMS Notifications Options."
 msgstr ""
 
-#: includes/biz-template.php:27
+#: includes/MSGWOW-template.php:27
 msgid ""
 "Add to WooCommerce the possibility to send <abbr title=\"Short Message "
 "Service\" lang=\"en\">SMS</abbr> notifications to the client each time you "
@@ -104,205 +104,205 @@ msgid ""
 "a new order. You can also send customer notes."
 msgstr ""
 
-#: includes/biz-template.php:36
+#: includes/MSGWOW-template.php:36
 msgid "<abbr title=\"Short Message Service\" lang=\"en\">SMS</abbr> gateway:"
 msgstr ""
 
-#: includes/biz-template.php:38
+#: includes/MSGWOW-template.php:38
 msgid "Select your SMS gateway"
 msgstr ""
 
-#: includes/biz-template.php:85 includes/biz-template.php:89
-#: includes/biz-template.php:93 includes/biz-template.php:97
-#: includes/biz-template.php:101 includes/biz-template.php:115
-#: includes/biz-template.php:122 includes/biz-template.php:128
-#: includes/biz-template.php:137 includes/biz-template.php:142
-#: includes/biz-template.php:147 includes/biz-template.php:152
-#: includes/biz-template.php:157 includes/biz-template.php:163
+#: includes/MSGWOW-template.php:85 includes/MSGWOW-template.php:89
+#: includes/MSGWOW-template.php:93 includes/MSGWOW-template.php:97
+#: includes/MSGWOW-template.php:101 includes/MSGWOW-template.php:115
+#: includes/MSGWOW-template.php:122 includes/MSGWOW-template.php:128
+#: includes/MSGWOW-template.php:137 includes/MSGWOW-template.php:142
+#: includes/MSGWOW-template.php:147 includes/MSGWOW-template.php:152
+#: includes/MSGWOW-template.php:157 includes/MSGWOW-template.php:163
 msgid "username"
 msgstr ""
 
-#: includes/biz-template.php:86 includes/biz-template.php:90
-#: includes/biz-template.php:94 includes/biz-template.php:98
-#: includes/biz-template.php:102 includes/biz-template.php:116
-#: includes/biz-template.php:123 includes/biz-template.php:129
-#: includes/biz-template.php:138 includes/biz-template.php:143
-#: includes/biz-template.php:148 includes/biz-template.php:153
-#: includes/biz-template.php:158 includes/biz-template.php:164
+#: includes/MSGWOW-template.php:86 includes/MSGWOW-template.php:90
+#: includes/MSGWOW-template.php:94 includes/MSGWOW-template.php:98
+#: includes/MSGWOW-template.php:102 includes/MSGWOW-template.php:116
+#: includes/MSGWOW-template.php:123 includes/MSGWOW-template.php:129
+#: includes/MSGWOW-template.php:138 includes/MSGWOW-template.php:143
+#: includes/MSGWOW-template.php:148 includes/MSGWOW-template.php:153
+#: includes/MSGWOW-template.php:158 includes/MSGWOW-template.php:164
 msgid "password"
 msgstr ""
 
-#: includes/biz-template.php:105 includes/biz-template.php:119
-#: includes/biz-template.php:173 includes/biz-template.php:181
-#: includes/biz-template.php:185 includes/biz-template.php:190
+#: includes/MSGWOW-template.php:105 includes/MSGWOW-template.php:119
+#: includes/MSGWOW-template.php:173 includes/MSGWOW-template.php:181
+#: includes/MSGWOW-template.php:185 includes/MSGWOW-template.php:190
 msgid "key"
 msgstr ""
 
-#: includes/biz-template.php:106 includes/biz-template.php:114
-#: includes/biz-template.php:127 includes/biz-template.php:133
-#: includes/biz-template.php:139 includes/biz-template.php:144
-#: includes/biz-template.php:154 includes/biz-template.php:159
-#: includes/biz-template.php:165 includes/biz-template.php:170
-#: includes/biz-template.php:174 includes/biz-template.php:186
-#: includes/biz-template.php:191
+#: includes/MSGWOW-template.php:106 includes/MSGWOW-template.php:114
+#: includes/MSGWOW-template.php:127 includes/MSGWOW-template.php:133
+#: includes/MSGWOW-template.php:139 includes/MSGWOW-template.php:144
+#: includes/MSGWOW-template.php:154 includes/MSGWOW-template.php:159
+#: includes/MSGWOW-template.php:165 includes/MSGWOW-template.php:170
+#: includes/MSGWOW-template.php:174 includes/MSGWOW-template.php:186
+#: includes/MSGWOW-template.php:191
 msgid "sender ID"
 msgstr ""
 
 #. Traducciones ocultas
-#: includes/biz-template.php:109
+#: includes/MSGWOW-template.php:109
 msgid "account Sid"
 msgstr ""
 
-#: includes/biz-template.php:110 includes/biz-template.php:169
-#: includes/biz-template.php:178 includes/biz-template.php:182
+#: includes/MSGWOW-template.php:110 includes/MSGWOW-template.php:169
+#: includes/MSGWOW-template.php:178 includes/MSGWOW-template.php:182
 msgid "authentication Token"
 msgstr ""
 
-#: includes/biz-template.php:111 includes/biz-template.php:149
+#: includes/MSGWOW-template.php:111 includes/MSGWOW-template.php:149
 msgid "mobile number"
 msgstr ""
 
-#: includes/biz-template.php:124 includes/biz-template.php:187
-#: includes/biz-template.php:193
+#: includes/MSGWOW-template.php:124 includes/MSGWOW-template.php:187
+#: includes/MSGWOW-template.php:193
 msgid "host"
 msgstr ""
 
-#: includes/biz-template.php:132
+#: includes/MSGWOW-template.php:132
 msgid "authentication key"
 msgstr ""
 
-#: includes/biz-template.php:134 includes/biz-template.php:192
+#: includes/MSGWOW-template.php:134 includes/MSGWOW-template.php:192
 msgid "route"
 msgstr ""
 
-#: includes/biz-template.php:162
+#: includes/MSGWOW-template.php:162
 msgid "client"
 msgstr ""
 
-#: includes/biz-template.php:168
+#: includes/MSGWOW-template.php:168
 msgid "authentication ID"
 msgstr ""
 
-#: includes/biz-template.php:177
+#: includes/MSGWOW-template.php:177
 msgid "project"
 msgstr ""
 
-#: includes/biz-template.php:199
+#: includes/MSGWOW-template.php:199
 msgid "Default"
 msgstr ""
 
-#: includes/biz-template.php:204 includes/biz-template.php:219
+#: includes/MSGWOW-template.php:204 includes/MSGWOW-template.php:219
 msgid "International"
 msgstr ""
 
-#: includes/biz-template.php:205
+#: includes/MSGWOW-template.php:205
 msgid "UK"
 msgstr ""
 
-#: includes/biz-template.php:206 includes/biz-template.php:220
+#: includes/MSGWOW-template.php:206 includes/MSGWOW-template.php:220
 msgid "USA"
 msgstr ""
 
-#: includes/biz-template.php:207
+#: includes/MSGWOW-template.php:207
 msgid "South Africa"
 msgstr ""
 
-#: includes/biz-template.php:208
+#: includes/MSGWOW-template.php:208
 msgid "Spain"
 msgstr ""
 
-#: includes/biz-template.php:211
+#: includes/MSGWOW-template.php:211
 msgid "Singapore"
 msgstr ""
 
-#: includes/biz-template.php:212
+#: includes/MSGWOW-template.php:212
 msgid "Germany"
 msgstr ""
 
-#: includes/biz-template.php:221
+#: includes/MSGWOW-template.php:221
 msgid "India"
 msgstr ""
 
-#: includes/biz-template.php:232 includes/biz-template.php:246
+#: includes/MSGWOW-template.php:232 includes/MSGWOW-template.php:246
 #, php-format
 msgid "The %s for your account in %s"
 msgstr ""
 
-#: includes/biz-template.php:256
+#: includes/MSGWOW-template.php:256
 msgid "Your mobile number:"
 msgstr ""
 
-#: includes/biz-template.php:258
+#: includes/MSGWOW-template.php:258
 msgid ""
 "The mobile number registered in your SMS gateway account and where you "
 "receive the SMS messages. You can add multiple mobile numbers separeted by | "
 "character. Example: xxxxxxxxx|yyyyyyyyy"
 msgstr ""
 
-#: includes/biz-template.php:263
+#: includes/MSGWOW-template.php:263
 msgid "New order notification:"
 msgstr ""
 
-#: includes/biz-template.php:265
+#: includes/MSGWOW-template.php:265
 msgid "Check if you want to receive a SMS message when there's a new order"
 msgstr ""
 
-#: includes/biz-template.php:270
+#: includes/MSGWOW-template.php:270
 msgid ""
 "Send international <abbr title=\"Short Message Service\" lang=\"en\">"
 "SMS</abbr>?:"
 msgstr ""
 
-#: includes/biz-template.php:272
+#: includes/MSGWOW-template.php:272
 msgid "Check if you want to send international SMS messages"
 msgstr ""
 
-#: includes/biz-template.php:277
+#: includes/MSGWOW-template.php:277
 msgid ""
 "Send <abbr title=\"Short Message Service\" lang=\"en\">SMS</abbr> to "
 "shipping mobile?:"
 msgstr ""
 
-#: includes/biz-template.php:279
+#: includes/MSGWOW-template.php:279
 msgid ""
 "Check if you want to send SMS messages to shipping mobile numbers, only if "
 "it is different from billing mobile number"
 msgstr ""
 
-#: includes/biz-template.php:284
+#: includes/MSGWOW-template.php:284
 msgid "order_product variable full details:"
 msgstr ""
 
-#: includes/biz-template.php:286
+#: includes/MSGWOW-template.php:286
 msgid ""
 "Check if you want to send the SMS messages with full order product "
 "information"
 msgstr ""
 
-#: includes/biz-template.php:291
+#: includes/MSGWOW-template.php:291
 msgid "Shipping mobile field:"
 msgstr ""
 
-#: includes/biz-template.php:293
+#: includes/MSGWOW-template.php:293
 msgid "Select the shipping mobile field"
 msgstr ""
 
-#: includes/biz-template.php:314
+#: includes/MSGWOW-template.php:314
 msgid "Custom Order Statuses & Actions:"
 msgstr ""
 
-#: includes/biz-template.php:316
+#: includes/MSGWOW-template.php:316
 msgid "Select your own statuses."
 msgstr ""
 
-#: includes/biz-template.php:409
+#: includes/MSGWOW-template.php:409
 #, php-format
 msgid "%s state custom message:"
 msgstr ""
 
-#: includes/biz-template.php:410 includes/biz-template.php:456
-#: includes/biz-template.php:463 includes/biz-template.php:470
-#: includes/biz-template.php:477 includes/biz-template.php:484
+#: includes/MSGWOW-template.php:410 includes/MSGWOW-template.php:456
+#: includes/MSGWOW-template.php:463 includes/MSGWOW-template.php:470
+#: includes/MSGWOW-template.php:477 includes/MSGWOW-template.php:484
 msgid ""
 "You can customize your message. Remember that you can use this variables: "
 "%id%, %order_key%, %billing_first_name%, %billing_last_name%, "
@@ -319,107 +319,107 @@ msgid ""
 "%customer_note%, %post_status%, %shop_name%, %order_product% and %note%."
 msgstr ""
 
-#: includes/biz-template.php:417
+#: includes/MSGWOW-template.php:417
 msgid "Custom variables:"
 msgstr ""
 
-#: includes/biz-template.php:419
+#: includes/MSGWOW-template.php:419
 msgid ""
 "You can add your own variables. Each variable must be entered onto a new "
 "line without percentage character ( % ). Example: <code>"
 "_custom_variable_name</code><br /><code>_another_variable_name</code>."
 msgstr ""
 
-#: includes/biz-template.php:424
+#: includes/MSGWOW-template.php:424
 msgid "Send only this messages:"
 msgstr ""
 
-#: includes/biz-template.php:426
+#: includes/MSGWOW-template.php:426
 msgid "Select what messages do you want to send"
 msgstr ""
 
-#: includes/biz-template.php:431
+#: includes/MSGWOW-template.php:431
 msgid "All messages"
 msgstr ""
 
-#: includes/biz-template.php:432 includes/biz-template.php:454
+#: includes/MSGWOW-template.php:432 includes/MSGWOW-template.php:454
 msgid "Owner custom message"
 msgstr ""
 
-#: includes/biz-template.php:433 includes/biz-template.php:461
+#: includes/MSGWOW-template.php:433 includes/MSGWOW-template.php:461
 msgid "Order received custom message"
 msgstr ""
 
-#: includes/biz-template.php:434 includes/biz-template.php:468
+#: includes/MSGWOW-template.php:434 includes/MSGWOW-template.php:468
 msgid "Order processing custom message"
 msgstr ""
 
-#: includes/biz-template.php:435 includes/biz-template.php:475
+#: includes/MSGWOW-template.php:435 includes/MSGWOW-template.php:475
 msgid "Order completed custom message"
 msgstr ""
 
-#: includes/biz-template.php:436 includes/biz-template.php:482
+#: includes/MSGWOW-template.php:436 includes/MSGWOW-template.php:482
 msgid "Notes custom message"
 msgstr ""
 
-#: includes/biz-template.php:457
+#: includes/MSGWOW-template.php:457
 #, php-format
 msgid "Order No. %s received on "
 msgstr ""
 
-#: includes/biz-template.php:464
+#: includes/MSGWOW-template.php:464
 #, php-format
 msgid "Your order No. %s is received on %s. Thank you for shopping with us!"
 msgstr ""
 
-#: includes/biz-template.php:471 includes/biz-template.php:478
+#: includes/MSGWOW-template.php:471 includes/MSGWOW-template.php:478
 #, php-format
 msgid "Thank you for shopping with us! Your order No. %s is now: "
 msgstr ""
 
-#: includes/biz-template.php:485
+#: includes/MSGWOW-template.php:485
 #, php-format
 msgid "A note has just been added to your order No. %s: "
 msgstr ""
 
-#: includes/biz-template.php:489
+#: includes/MSGWOW-template.php:489
 msgid "Send debug information?:"
 msgstr ""
 
-#: includes/biz-template.php:491
+#: includes/MSGWOW-template.php:491
 msgid "Check if you want to receive debug information from your SMS gateway"
 msgstr ""
 
-#: includes/biz-template.php:496
+#: includes/MSGWOW-template.php:496
 msgid "email address:"
 msgstr ""
 
-#: includes/biz-template.php:498
+#: includes/MSGWOW-template.php:498
 msgid "Add an email address where you want to receive the debug information"
 msgstr ""
 
-#: includes/biz-template.php:503
+#: includes/MSGWOW-template.php:503
 msgid "Save Changes"
 msgstr ""
 
-#: includes/admin/functions-biz.php:44
+#: includes/admin/functions-MSGWOW.php:44
 msgid "Settings of "
 msgstr ""
 
-#: includes/admin/functions-biz.php:44 includes/admin/functions-biz.php:98
+#: includes/admin/functions-MSGWOW.php:44 includes/admin/functions-MSGWOW.php:98
 msgid "Settings"
 msgstr ""
 
-#: includes/admin/functions-biz.php:45
+#: includes/admin/functions-MSGWOW.php:45
 msgid "Support of "
 msgstr ""
 
-#: includes/admin/functions-biz.php:98
+#: includes/admin/functions-MSGWOW.php:98
 #, php-format
 msgid "Please, update your %s. It's very important!"
 msgstr ""
 
-#: includes/admin/functions-biz.php:98
+#: includes/admin/functions-MSGWOW.php:98
 msgid "settings"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgid "Gateway answer: "
 msgstr ""
 
 #. Name of the plugin
-msgid "WooCommerce - Biz SMS Notifications"
+msgid "WooCommerce - MSGWOW SMS Notifications"
 msgstr ""
 
 #. Description of the plugin

@@ -1,9 +1,9 @@
-=== Cart SMS Notification-biz ===
-Contributors: Saurabh upadhyay
-Tags: Cart SMS Notification,SMS Notification Plugin,Add to Cart Notify Plugins
+=== Cart SMS Notification-MSGWOW ===
+Contributors: MSGWOW
+Tags: MSGWOW SMS Notification Plugin for Woocommerce, SMS Notification Plugin for Woocommerce
 Requires at least: 4.4
-Tested up to: 4.7
-Stable tag: Cart SMS Notification
+Tested up to: 3.2
+Stable tag: MSGWOW SMS Notification Plugin for Woocommerce
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ Add to WooCommerce SMS notifications to your clients for order status changes. A
 
 == Description ==
 
-Add to WooCommerce SMS notifications to your clients for order status changes. Also you can receive an SMS message when the shop get a new order. And Send The International SMS.
+MSGWOW SMS Notification Plugin is Specially for eCommerce Stores hosted with WooCommerce. Where users and admin both get SMS Notifications for New Order, Order Status Change, Login OTP Verification, with 20+ Notifications triggers. 
 
 == Installation ==
 
@@ -56,7 +56,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/
 
-You can contact us at saurabh.upadhyay@webdew.in
+You can contact us at support@msgwow.com
 
 
 
